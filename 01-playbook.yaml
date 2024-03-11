@@ -1,5 +1,5 @@
--name: ping the server
-  hosts: Web
+-name: ping playbook
+  hosts: web
   tasks: 
     -name: ping the server
       ansible.bultin.ping:
