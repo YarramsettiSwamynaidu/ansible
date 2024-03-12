@@ -1,0 +1,11 @@
+#playlevel variable 
+- name: variable
+  hosts: localhost
+  vars: 
+    Name: "Swamy"
+    Place: "Gannavaram"
+    Company: CGI
+  tasks:
+  - name: check variable
+    ansible.builtin.debug:
+      msg: "Hello, My name {{Name}} iam from {{Place}}, Working in {{Company}}"
