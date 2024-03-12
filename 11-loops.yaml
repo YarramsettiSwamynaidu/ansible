@@ -2,7 +2,7 @@
   hosts: localhost
   tasks:
   - name: print user names
-    ansible.builin.debug:
+    ansible.builtin.debug:
       msg: "Name: {{item}}"
     loop: 
     - ramseh
