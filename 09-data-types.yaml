@@ -1,0 +1,27 @@
+- name: to check data
+  hosts: localhost
+  vars:
+    NAME: "Swamy" #key value pair
+    SKILL: #skill is list type
+      - devops
+      - java
+      - python
+      - SQL
+    Experiance: #Map formate
+      devops: 2
+      java: 3
+      python: 5
+      SQL: 4
+    Trainer: true #boolean type
+  tasks:
+  - name: printb keyvalue pair
+    ansible.builtin.debug:
+      msg: "Hello, My name {{NAME}}"
+  tasks:
+  - name: printb Skill
+    ansible.builtin.debug:
+      msg: "Hello, Print lIST {{SKILL}}"
+  tasks:
+  - name: print MAP
+    ansible.builtin.debug:
+      msg: "Hello,Print MAP {{Experiance}}"
