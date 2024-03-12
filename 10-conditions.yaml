@@ -1,0 +1,12 @@
+- name: conditions
+  hosts: localhost
+  tasks: 
+    - name: to check rebouser
+      ansible.builtin.command: id roboshop
+        register: user
+        ignore_errors: true
+
+    - name: 
+      ansible.builtin.debug:
+        msg: "user is:{{user}}"
+
