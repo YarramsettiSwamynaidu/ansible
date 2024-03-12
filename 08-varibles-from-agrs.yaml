@@ -3,4 +3,4 @@
   tasks:
   - name: check variable
     ansible.builtin.debug:
-      msg: "Hello, My name {{PERSON}}, Wishes {{WORD}}
+      msg: "Hello, My name {{PERSON}}, Wishes {{WORD}}"
