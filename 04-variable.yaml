@@ -8,6 +8,6 @@
   tasks:
   - name: check variable
     vars: #taks level variable
-      Company: CGI
+      Company: TCS
     ansible.builtin.debug:
       msg: "Hello, My name {{Name}} iam from {{Place}}, Working in {{Company}}"
