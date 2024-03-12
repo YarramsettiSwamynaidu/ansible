@@ -3,10 +3,10 @@
   tasks: 
     - name: to check rebouser
       ansible.builtin.command: id roboshop
-        register: user
-        ignore_errors: true
+      register: user
+      ignore_errors: true
 
-    - name: 
+    - name: print variable user
       ansible.builtin.debug:
         msg: "user is:{{user}}"
 
