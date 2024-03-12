@@ -17,15 +17,15 @@
   - name: print keyvalue pair
     ansible.builtin.debug:
       msg: "Hello,KEYPAIR:{{NAME}}"
-  tasks:
+  
   - name: printb Skill
     ansible.builtin.debug:
       msg: "Hello, Print lIST:{{SKILL}}"
-  tasks:
+
   - name: print MAP
     ansible.builtin.debug:
       msg: "Hello,Print MAP:{{Experiance}}"
-  tasks:
+      
   - name: print BOOLEAN
     ansible.builtin.debug:
-      msg: "Hello,Print OOLEAN:{{Trainer}}"
+      msg: "Hello,Print BOOLEAN:{{Trainer}}"
