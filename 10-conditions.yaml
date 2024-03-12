@@ -1,5 +1,6 @@
 - name: conditions
   hosts: localhost
+  become: yes
   tasks: 
     - name: to check rebouser
       ansible.builtin.command: id roboshop
@@ -9,4 +10,13 @@
     - name: print variable user
       ansible.builtin.debug:
         msg: "user is:{{user}}"
+
+    - name: print variable user
+      ansible.builtin.debug:
+        msg: "user is:{{user.rc}}"
+
+    - name: print variable user
+      ansible.builtin.user:
+        name: roboshop
+    when: user.rc != 0
 
