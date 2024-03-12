@@ -14,14 +14,14 @@
       SQL: 4
     Trainer: true #boolean type
   tasks:
-  - name: printb keyvalue pair
+  - name: print keyvalue pair
     ansible.builtin.debug:
-      msg: "Hello, My name {{NAME}}"
+      msg: "Hello,KEYPAIR:{{NAME}}"
   tasks:
   - name: printb Skill
     ansible.builtin.debug:
-      msg: "Hello, Print lIST {{SKILL}}"
+      msg: "Hello, Print lIST:{{SKILL}}"
   tasks:
   - name: print MAP
     ansible.builtin.debug:
-      msg: "Hello,Print MAP {{Experiance}}"
+      msg: "Hello,Print MAP:{{Experiance}}"
