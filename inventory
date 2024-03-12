@@ -1,6 +1,14 @@
 192.268.16.8
 192.268.16.2
 
+[localhost]
+localhost
+
+[localhost:vars]
+Name="Swamy from inventory"
+Place="Gannavaram"
+Company="CGI"
+
 [web]
 54.145.134.225
 
