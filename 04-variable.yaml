@@ -7,7 +7,7 @@
     Company: CGI
   tasks:
   - name: check variable
-    vars: taks level variable
+    vars: #taks level variable
       Company: CGI
     ansible.builtin.debug:
       msg: "Hello, My name {{Name}} iam from {{Place}}, Working in {{Company}}"
